@@ -27,6 +27,10 @@ function go(){ if(!(texto == t1.value)){
             out_texto += "}, \n {";
             continue;
         }
+        if(texto[i] == ","){
+            out_texto += ".";
+            continue;
+        }
         out_texto += texto[i];        
     }
 
